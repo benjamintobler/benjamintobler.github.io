@@ -1,0 +1,33 @@
+body {
+ background-color: #ffffff;
+ color: #000000;
+ font-family: Georgia;
+ font-size: 10pt;
+ text-align: center;
+}
+.contents {
+  margin: auto;
+  text-align: left;
+  width: 45em;
+}
+footer {
+ bottom: 1em;
+ color: dimgray;
+ display: block;
+ font-size: 0.75em;
+ left: 5em;
+ position: absolute;
+}
+h1 {
+ font-size: 12pt;
+ font-weight: bold;
+ margin: 0 0 20 0;
+}
+a, a:visited {
+ color: #3030a0;
+ font-weight: normal;
+ text-decoration: none;
+}
+p {
+ margin: 0 0 10 0;
+}
