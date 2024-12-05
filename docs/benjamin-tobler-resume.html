@@ -16,7 +16,7 @@
     div {
       margin: auto;
       text-align: justify;
-      width: 42em;
+      width: 45em;
     }
 
     ul {
@@ -83,7 +83,7 @@
 
     a,
     a:visited {
-      color: steelblue;
+      color: #30618a;
       text-decoration: none;
     }
   </style>
@@ -98,38 +98,43 @@
 
     <h2>ABOUT</h2>
     <p>
-      Software engineer working on distributed database &amp; storage systems, networking, and virtualization.
+      Software engineer working in distributed database &amp; storage systems, networking & virtualization.
     </p>
 
     <p>
-      AWS <a href="https://aws.amazon.com/ec2/">EC2</a> team member from founding, through beta, GA and to $1Bn ARR
+      AWS <a href="https://aws.amazon.com/ec2/">EC2</a> team member from founding, through beta &amp; GA, to $1Bn ARR
       service.
-      Owned the hypervisor side of the EC2 control plane through GA.
-      Led design &amp; implementation of <a href="https://aws.amazon.com">AWS's</a> <a
-        href="https://aws.amazon.com/vpc/">VPC</a> control plane.
-      Led design &amp; implementation of <a href="https://www.oracle.com/cloud/">OCI's</a> <a
-        href="https://www.oracle.com/cloud/compute/virtual-machines/">Virtual Machine Service</a> offering.<br />
+
+      Owned hypervisor side of EC2 control plane through GA.
+    </p>
+    <p>
+      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a>
+      control plane &amp; <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine
+        Service</a>.
     </p>
     <p>
       Designed &amp; implemented zero copy RPC & network messaging for <a
-        href="https://aws.amazon.com/rds/aurora">Amazon Aurora</a>, with thread per core architecture (M:N task
-      scheduling) and replica partitioning. Designed and <a
-        href="https://patents.google.com/patent/US20210342311A1">patented novel optimistic concurrency
-        primitives</a> on specific value types to eliminate transaction aborts caused by hot key contention. Implemented
-      <a href="https://en.wikipedia.org/wiki/C10k_problem">10k connection problem</a> solution for Java pre
-      non-blocking IO support, and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a> verification and
-      HSM vendor abstraction APIs for financial transaction processing.
+        href="https://aws.amazon.com/rds/aurora">Amazon Aurora</a>, with thread per core (M:N)
+      user mode task scheduling. <a href="https://patents.google.com/patent/US20210342311A1">Patented</a> novel
+      optimistic concurrency primitives to eliminate transaction aborts due to hot key contention under common
+      workloads.
+    </p>
+    <p>
+      Designed HSM vendor independent API and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a>
+      SDK for financial transaction processing. Implemented 10k connection solution for Java prior to
+      non-blocking IO support.
+    </p>
     </p>
 
     <h2>EDUCATION</h2>
     <p>
       M.Sc. Computer Science (Distinction), <i><a href="https://tobler.nz/benjamin-tobler-msc-thesis.pdf">Network
-          Security</a></i>, University of Cape Town, 2005<br>
+          Security Protocols</a></i>, University of Cape Town, 2005<br>
       Awarded <a href="https://www.nrf.ac.za/">NRF</a> Prestige Scholarship for Masters study<br>
       Published in proceedings <a href="https://www.ifipsec.org/">IFIP SEC</a> 2004 Toulouse (<a
         href="https://tobler.nz/toblerifipsec04.pdf">.pdf</a>)
       &amp; <a href="https://digifors.cs.up.ac.za/issa/2003/downloadsDay3.htm">ISSA</a> 2003 Johannesburg
-      (<a href="https://tobler.nz/toblerissa04.pdf">.pdf</a>)
+      (<a href="https://tobler.nz/toblerissa03.pdf">.pdf</a>)
     </p>
 
     <h2>PATENTS</h2>
@@ -154,8 +159,9 @@
         Delivered with block storage and virtual network integration (via both VIF and virtio) in ~4 months.
       </li>
       <li>
-        Defined product requirements and implemented proof of concept for Bring Your Own Image (<a
-          href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">BYOI</a>) support
+        Defined product requirements and implemented proof of concept for <a
+          href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own
+          Image</a> support
         for VMware, VirtualBox, QEMU and other virtualization products.
       </li>
     </ul>
@@ -163,16 +169,20 @@
     <ul>
       <li>
         Designed novel (<a href="https://patents.google.com/patent/US20210342311A1">patent 20210342311</a>) optimistic
-        concurrency primitives (e.g. opaque test-and-increment counters) to prevent hot key contention from aborting
-        transaction commits. Proof of concept implementation &amp; evaluation of new backend storage for improved
-        scaling and availability.
+        concurrency primitives (e.g. opaque test-and-increment counters) to eliminate transaction aborts caused by
+        hot key contention under common workload patterns.
+      </li>
+      <li>
+        Advised client teams on strategies &amp; schema designs their use cases, e.g.: source for cross
+        region replication and massive fan out metadata to distributed widely scaled out data planes.
+      </li>
+      <li>
+        Designed (in conjuction with formal verification via TLA) &amp implemented proof of concept for
+        new scalable transactional storage for future scaling and high availability.
       </li>
       <li>
         Collaborated on design, implementation and deployment of transition to cell architecture to mitigate noisy
-        neighbors and limit operational blast radius. Advised and collaborated with client teams on effective adoption
-        and schema for varied use cases from standard micro-service backend to source of truth for metadata distributed
-        data planes at scale.
-      </li>
+        neighbors and limit operational blast radius. </li>
     </ul>
     </p>
 
