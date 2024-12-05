@@ -58,6 +58,7 @@
       font-weight: bold;
       margin-bottom: 0.5em;
       margin-top: 1.5em;
+      text-transform: uppercase;
     }
 
     h3 {
@@ -68,10 +69,10 @@
     }
 
     h4 {
-      font-size: 0.9em;
+      font-size: 1em;
       font-weight: 450;
       color: dimgray;
-      margin-bottom: 0.25em;
+      margin-bottom: 0.5em;
       margin-top: 0.5em;
     }
 
@@ -108,10 +109,13 @@
       Owned hypervisor side of EC2 control plane through GA.
     </p>
     <p>
-      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a>
-      control plane &amp; <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine
-        Service</a>. Led project to enable teams to rapidly build and reliably operate services
-      via automation &amp; templates, guides & examples repository and common libraries.
+    Led the <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine Service</a> development,
+    defining design and tasks for a growing VM team as well as the Block Storage, Virtual Networking and Bare Metal Compute
+    teams. Identified dependencies and opportunities to parallelize development to meet an aggressive delivery date whilst
+    delivering a control plane implementation that was competitive in the Gartner bulk provisioning benchmarks. 
+    </p>
+    <p>
+      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a> control plane. 
     </p>
     <p>
       Designed &amp; implemented zero copy RPC and thread per core (M:N) user mode task &amp; IO scheduling core to
@@ -127,7 +131,6 @@
       verification for financial transaction processing. Implemented 10k connection solution for Java prior to
       non-blocking IO support.
     </p>
-    </p>
 
     <h2>EDUCATION</h2>
     <p>
@@ -141,7 +144,9 @@
     </p>
 
     <h2>PATENTS</h2>
-    <h4>Selected database &amp; virtualization management patents</h4>
+    <p>
+      Selected database &amp; virtualization management patents
+    </p>
     <p class="indent">
       <a href="https://patents.google.com/patent/US9223843B1">US9223843</a>,
       <a href="https://patents.google.com/patent/US9552242B1">US9552242</a>,
@@ -154,38 +159,50 @@
 
     <h2>EMPLOYMENT</h2>
     <h3>Oracle Cloud Infrastructure 2016 - 2021, Consulting MTS </h3>
+    <p>
+      Led design reviews for new services &amp; architectures. Defined team roadmaps, priorities &amp; technical
+      direction. Worked across client teams to define and drive adoption of scalable &amp; resilient approaches to data
+      modelling, transactions &amp; consistency, and distribution at scale from control plane to data plane.
+    </p>
     <h4>Virtual Machine Service</h4>
     <ul>
       <li>
-        Led the OCI VM offering definition, design &amp; implementation for <a
-          href="https://www.oracle.com/cloud/">OCI</a>.
-        Delivered with block storage and virtual network integration (via both VIF and virtio) in ~4 months.
+
+Led the OCI VM offering design, development and delivery while expanding the team and parallezing work to bring in the
+delivery date. Defined, prioritized and assigned development and integration tasks for the VMI, Bare Metal Compute,
+Block Storage and Virtual Networking teams as well as monitoring, operation and capacity management tooling to deliver
+a fully featured Virtual Machine Instance product on an aggressive timeline to meet customer demand. Drove a successful
+effort to reach GA with competetive Gartner bulk provisioning benchmark times as measured by Gartner. 
+
       </li>
       <li>
-        Defined product requirements and implemented proof of concept for <a
-          href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own
-          Image</a> support
-        for VMware, VirtualBox, QEMU and other virtualization products.
+
+Defined post GA roadmap, including improved and extended automation for operational insights &amp; troubleshooting and
+capacity management. Defined technical product requirements and implemented proof of concept for <a
+href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own Image</a>
+support for VMware, VirtualBox, QEMU and other virtualization products.
+
+
       </li>
     </ul>
     <h4>Strictly serializable database for control planes</h4>
     <ul>
       <li>
+
+Worked with team to transition from a ORM style database library layer, to database as a service, including cell based
+architecture to limit blast radius and mitigate noisy neighbours. Worked with client teams on migration and effective
+use of the service for regional replication, fan out to data plane nodes and data integration use cases.
+
+      </li>
+
         Designed novel (<a href="https://patents.google.com/patent/US20210342311A1">patent 20210342311</a>) optimistic
         concurrency primitives (e.g. opaque test-and-increment counters) to eliminate transaction aborts caused by
         hot key contention under common workload patterns.
       </li>
       <li>
-        Advised client teams on strategies &amp; schema designs for their use cases, e.g. source for cross
-        region replication, and massive fan out metadata to distributed widely scaled out data planes.
-      </li>
-      <li>
-        Designed (in conjuction with TLA formal verification) and implemented proof of concept for
+        Designed (in conjunction with TLA verification) and implemented proof of concept for
         new scalable transactional storage for future scaling and high availability.
       </li>
-      <li>
-        Collaborated on design, implementation and deployment of transition to cell architecture to mitigate noisy
-        neighbors and limit operational blast radius. </li>
     </ul>
     </p>
 
@@ -205,7 +222,7 @@
         Designing to avoid (and profiled to identify) performance bottlenecks on the fast path. E.g. eliding locks and
         using suitable data structures and concurrency mechanisms for the M:N threading and partitioning model;
         Eliminating heap allocations by implementing custom C++ function objects for callbacks and completions; Custom
-        message buffer vectors to seperate user data payloads from headers without copying. </li>
+        message buffer vectors to separate user data payloads from headers without copying. </li>
     </ul>
 
     <h4>Virtual Private Cloud</h4>

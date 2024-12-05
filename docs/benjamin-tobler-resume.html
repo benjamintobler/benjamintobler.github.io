@@ -109,10 +109,13 @@
       Owned hypervisor side of EC2 control plane through GA.
     </p>
     <p>
-      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a>
-      control plane &amp; <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine
-        Service</a>. Led project to enable teams to rapidly build and reliably operate services
-      via automation &amp; templates, guides & examples repository and common libraries.
+    Led the <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine Service</a> development,
+    defining design and tasks for a growing VM team as well as the Block Storage, Virtual Networking and Bare Metal Compute
+    teams. Identified dependencies and opportunities to parallelize development to meet an aggressive delivery date whilst
+    delivering a control plane implementation that was competitive in the Gartner bulk provisioning benchmarks. 
+    </p>
+    <p>
+      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a> control plane. 
     </p>
     <p>
       Designed &amp; implemented zero copy RPC and thread per core (M:N) user mode task &amp; IO scheduling core to
@@ -127,7 +130,6 @@
       Designed HSM vendor independent API and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a>
       verification for financial transaction processing. Implemented 10k connection solution for Java prior to
       non-blocking IO support.
-    </p>
     </p>
 
     <h2>EDUCATION</h2>
@@ -165,24 +167,30 @@
     <h4>Virtual Machine Service</h4>
     <ul>
       <li>
-        Led the OCI VM offering definition, design &amp; implementation for <a
-          href="https://www.oracle.com/cloud/">OCI</a>.
-        Delivered with block storage and virtual network integration (via both VIF and virtio) in ~4 months.
+        Led the OCI VM offering design, development and delivery while expanding the team and parallelizing work to bring in the
+        delivery date. Defined, prioritized and assigned development and integration tasks for the VMI, Bare Metal Compute,
+        Block Storage and Virtual Networking teams as well as monitoring, operation and capacity management tooling to deliver
+        a fully featured Virtual Machine Instance product on an aggressive timeline to meet customer demand. Drove a successful
+        effort to reach GA with competitive Gartner bulk provisioning benchmark times as measured by Gartner. 
       </li>
       <li>
-        Defined product requirements and implemented proof of concept for <a
-          href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own
-          Image</a> support
-        for VMware, VirtualBox, QEMU and other virtualization products.
+        Defined post GA roadmap, including improved and extended automation for operational insights &amp; troubleshooting and
+        capacity management. Defined technical product requirements and implemented proof of concept for <a
+        href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own Image</a>
+        support for VMware, VirtualBox, QEMU and other virtualization products.
       </li>
     </ul>
     <h4>Strictly serializable database for control planes</h4>
     <ul>
       <li>
+        Worked with team to transition from a ORM style database library layer, to database as a service, including cell based
+        architecture to limit blast radius and mitigate noisy neighbours. Worked with client teams on migration and effective
+        use of the service for regional replication, fan out to data plane nodes and data integration use cases.
+      </li>
+      <li>
         Designed novel (<a href="https://patents.google.com/patent/US20210342311A1">patent 20210342311</a>) optimistic
         concurrency primitives (e.g. opaque test-and-increment counters) to eliminate transaction aborts caused by
-        hot key contention under common workload patterns. Collaborated on transition to cell architecture to limit
-        blast radius and mitigate noisy neighbors.
+        hot key contention under common workload patterns.
       </li>
       <li>
         Designed (in conjunction with TLA verification) and implemented proof of concept for
