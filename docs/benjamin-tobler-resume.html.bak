@@ -180,7 +180,7 @@
         region replication, and massive fan out metadata to distributed widely scaled out data planes.
       </li>
       <li>
-        Designed (in conjunction with TLA formal verification) and implemented proof of concept for
+        Designed (in conjuction with TLA formal verification) and implemented proof of concept for
         new scalable transactional storage for future scaling and high availability.
       </li>
       <li>
@@ -205,7 +205,7 @@
         Designing to avoid (and profiled to identify) performance bottlenecks on the fast path. E.g. eliding locks and
         using suitable data structures and concurrency mechanisms for the M:N threading and partitioning model;
         Eliminating heap allocations by implementing custom C++ function objects for callbacks and completions; Custom
-        message buffer vectors to separate user data payloads from headers without copying. </li>
+        message buffer vectors to seperate user data payloads from headers without copying. </li>
     </ul>
 
     <h4>Virtual Private Cloud</h4>
