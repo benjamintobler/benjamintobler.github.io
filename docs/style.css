@@ -1,33 +1,33 @@
 body {
  background-color: #ffffff;
  color: #000000;
- font-family: Georgia;
- font-size: 10pt;
+ font-family: 'Droid Sans', 'Calibri', 'Gill Sans', 'Trebuchet MS', sans-serif;
+ font-size: 11pt;
  text-align: center;
 }
 .contents {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   width: 45em;
 }
-footer {
+
+.footer {
  bottom: 1em;
  color: dimgray;
- display: block;
  font-size: 0.75em;
- left: 5em;
  position: absolute;
+ text-align: left;
 }
+
 h1 {
- font-size: 12pt;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 1.2em;
  font-weight: bold;
- margin: 0 0 20 0;
 }
+
 a, a:visited {
- color: #3030a0;
+ color: steelblue;
  font-weight: normal;
  text-decoration: none;
-}
-p {
- margin: 0 0 10 0;
 }

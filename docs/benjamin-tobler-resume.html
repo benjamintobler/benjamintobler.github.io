@@ -7,8 +7,8 @@
     }
 
     body {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 11pt;
+      font-family: 'Droid Sans', 'Calibri', 'Gill Sans', 'Trebuchet MS', sans-serif;
+      font-size: 10pt;
       text-align: center;
     }
 
@@ -38,6 +38,15 @@
     li {
       padding-bottom: 0.5em;
       padding-left: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
     }
 
     h1 {
@@ -73,7 +82,8 @@
       text-align: justify;
     }
 
-    a, a:visited {
+    a,
+    a:visited {
       color: steelblue;
       text-decoration: none;
     }
@@ -82,15 +92,14 @@
 
 <body>
   <div div="id-resume">
-    <h1>Benjamin Tobler Resumé</h1>
+    <h1>Benjamin Tobler Resum&eacute;</h1>
     <p style="font-size: 10pt;">
-      <a href="mailto:ben@tobler.nz">ben@tobler.nz</a> +1 206 370-2990
+      <a href="mailto:ben@tobler.nz">ben@tobler.nz</a> | +1 206 370-2990 | <a href="https://tobler.nz">tobler.nz</a>
     </p>
 
     <h2>ABOUT</h2>
     <p>
-      Software engineer working on distributed database &amp; storage systems, networking, virtualization and
-      concurrency.
+      Software engineer working on distributed database &amp; storage systems, networking, and virtualization.
     </p>
 
     <p>
@@ -103,12 +112,23 @@
         href="https://www.oracle.com/cloud/compute/virtual-machines/">Virtual Machine Service</a> offering.<br />
     </p>
     <p>
-      Designed &amp; implemented zero copy RPC & network messaging stack for <a
+      Designed &amp; implemented zero copy RPC & network messaging for <a
         href="https://aws.amazon.com/rds/aurora">Amazon Aurora</a>, with thread per core architecture (M:N task
-      scheduling) and replica partitioning.
-      Implemented early "<a href="https://en.wikipedia.org/wiki/C10k_problem">10k connection problem</a>" solution for
-      Java, and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a> verification HSM vendor abstraction
-      SDKs for financial transaction processing.
+      scheduling) and replica partitioning. Designed and <a
+        href="https://patents.google.com/patent/US20210342311A1">patented novel optimistic concurrency
+        primitives</a> on specific value types to eliminate transaction aborts caused by hot key contention. Implemented
+      <a href="https://en.wikipedia.org/wiki/C10k_problem">10k connection problem</a> solution for Java pre
+      non-blocking IO support, and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a> verification and
+      HSM vendor abstraction APIs for financial transaction processing.
+    </p>
+
+    <h2>EDUCATION</h2>
+    <p class="indent">
+      M.Sc. Computer Science (Distinction), <i><a href="https://tobler.nz/benjamin-tobler-msc-thesis.pdf">Network
+          Security</a></i>, University of Cape Town, 2005<br>
+      Awarded <a href="https://www.nrf.ac.za/">NRF</a> Prestige Scholarship for Masters study<br>
+      <a href="https://tobler.nz/tobler04.pdf">Published</a> in proceedings <a href="https://www.ifipsec.org/">IFIP
+        SEC</a> 2004 Toulouse &amp; <a href="https://infosecsa.com/">Infosec SA</a> 2004 Johannesburg
     </p>
 
     <h2>PATENTS</h2>
@@ -123,13 +143,6 @@
       <a href="https://patents.google.com/patent/US8190682">US8190682</a><br>
     </p>
 
-    <h2>EDUCATION &amp; ACADEMICS</h2>
-    <p class="indent">
-      M.Sc. Computer Science (Distinction), University of Cape Town, 2005<br>
-      National Research Foundation Prestige Scholarship for Masters study, 2003<br>
-      Conference proceedings IFIP Security Workshop 2005, Toulouse &amp; ISSA 2004, Johannesburg
-    </p>
-
     <h2>EMPLOYMENT</h2>
     <h3>Oracle Cloud Infrastructure 2016 - 2021, Consulting MTS </h3>
     <h4>Virtual Machine Service</h4>
@@ -140,20 +153,24 @@
         Delivered with block storage and virtual network integration (via both VIF and virtio) in ~4 months.
       </li>
       <li>
-        Identified requirements and implemented proof of concepts for Bring Your Own Image (<a
+        Defined product requirements and implemented proof of concept for Bring Your Own Image (<a
           href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">BYOI</a>) support
-        for
-        VMWare, Qemu, VirtualBox and other virtualization products.
+        for VMware, VirtualBox, QEMU and other virtualization products.
       </li>
     </ul>
     <h4>Strictly serializable database for control planes</h4>
     <ul>
       <li>
-        Designed novel optimistic concurrency primitive (opaque, serializable counters) to solve hot key contention
-        problem
+        Designed novel (<a href="https://patents.google.com/patent/US20210342311A1">patent 20210342311</a>) optimistic
+        concurrency primitives (e.g. opaque test-and-increment counters) to prevent hot key contention from aborting
+        transaction commits. Proof of concept implementation &amp; evaluation of new backend storage for improved
+        scaling and availability.
       </li>
       <li>
-        Helped team transition to cell architecture to isolate tenants to mitigate noisy neighbours and blast radius
+        Collaborated on design, implementation and deployment of transition to cell architecture to mitigate noisy
+        neighbors and limit operational blast radius. Advised and collaborated with client teams on effective adoption
+        and schema for varied use cases from standard micro-service backend to source of truth for metadata distributed
+        data planes at scale.
       </li>
     </ul>
     </p>
@@ -162,9 +179,9 @@
     <h4>Amazon Aurora distributed storage </h4>
     <ul>
       <li>
-        Designed and implemented of a Aurora's zero-copy, vectored IO custom RPC to achieve stringent latency,
-        throughput and
-        scaling goals for the data plane.
+        Designed and implemented Aurora's zero-copy, vectored IO custom RPC and network messaging that achieved the
+        ambitious latency &amp; throughput goals for fanning out log writes from the database engine to distributed
+        storage.
       </li>
       <li>
         Mentored remote Bay Area team through integration of database engine with distributed storage via custom RPC.
@@ -185,16 +202,14 @@
         Led design and implementation the VPC virtual network management control plane.
         The system manages VPC customers' network metadata, including network topology maps to physical resources,
         metadata ACLs, and provides a stream source for distribution to hypervisors.
-        topology and state of large numbers of virtual networks.
       </li>
       <li>
         Collaborated with AWS Linux kernel team on successful effort to improve packet throughput on hypervisors.
-        Achieved by moving control plane connection source identification functionality from hypervisor control plane
-        agent in user space, into a custom kernel module.
+        Achieved by moving source identification logic from control plane agent in user space, to a kernel module.
       </li>
       <li>
-        Extended and maintained the distributed firewall system that implemented user specified security groups and
-        policies applied to their EC2 instances.
+        Extended and maintained the distributed firewall system that implements EC2 instance security groups across
+        all the hypervisors in a data center.
       </li>
       <li>
         Optimized in-memory representation of VPC network topology and security policy on hypervisors to support massive
@@ -205,21 +220,22 @@
     <h4>EC2 from founding, through beta and GA</h4>
     <ul>
       <li>
-        Designed and implemented the EC2 control plane hypervisor agent. Ran on > 100k physical hosts (and now > 1MM
+        Designed and implemented the EC2 control plane hypervisor agent. Ran on > 100K physical hosts (and now > 1M
         hypervisors) to manage the customer virtual machine (EC2 instance) lifecycle. Extended the agent to collaborate
-        with neighbouring hypervisors to download and cache boot images from object store service (<a
+        with neighboring hypervisors to download and cache boot images from object store service (<a
           href="https://aws.amazon.com/s3/"></a>S3</a>). The improvement allowed fast EC2 instance launches despite
         limited edge bandwidth (circa private beta launch).
       </li>
       <li>
         Implemented many internal and public utilities, micro-services and tools for EC2:
-        e.g. command-line AMI packager and uploader,
+        e.g. command-line AMI packager and up-loader,
         internal dynamic DNS vendor for EC2 instances and hypervisors,
-        and network rate limiting at hypervisor to prevent noisy neigbour problems.
+        and network rate limiting at hypervisor to prevent noisy neighbor problems.
       </li>
       <li>
-        Helped grow the EC2 team in Seattle by ramping up new team members brought in to on EC2 networking and security.
-        and engineers. </li>
+        Helped grow the EC2 team in Seattle by ramping up new team members tasked with developing new EC2 networking and
+        security functionality.
+      </li>
     </ul>
     <div>
 
