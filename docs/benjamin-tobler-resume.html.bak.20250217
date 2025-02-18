@@ -1,0 +1,266 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
+  <style>
+    html {
+      text-align: center;
+    }
+
+    body {
+      font-family: 'Droid Sans', 'Calibri', 'Gill Sans', 'Trebuchet MS', sans-serif;
+      font-size: 10pt;
+      text-align: center;
+    }
+
+    div {
+      margin: auto;
+      text-align: justify;
+      width: 45em;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .indent {
+      margin-left: 0.5em;
+      padding-left: 0;
+    }
+
+    li {
+      padding-bottom: 0.5em;
+      padding-left: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    }
+
+    h1 {
+      font-size: 14pt;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 0.25em;
+    }
+
+    h4 {
+      font-size: 1em;
+      font-weight: 450;
+      color: dimgray;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+    }
+
+    p {
+      margin-top: 0.25em;
+      padding-top: 0;
+      text-align: justify;
+    }
+
+    a,
+    a:visited {
+      color: #30618a;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div div="id-resume">
+    <h1>Benjamin Tobler Resum&eacute;</h1>
+    <p style="font-size: 10pt;">
+      <a href="mailto:ben@tobler.nz">ben@tobler.nz</a> | +1 206 370-2990 | <a href="https://tobler.nz">tobler.nz</a>
+    </p>
+
+    <h2>ABOUT</h2>
+    <p>
+      Software engineer working in distributed database &amp; storage systems, networking & virtualization.
+    </p>
+
+    <p>
+      AWS <a href="https://aws.amazon.com/ec2/">EC2</a> team member from founding, through beta &amp; GA, to $1Bn ARR
+      service.
+
+      Owned hypervisor side of EC2 control plane through GA.
+    </p>
+    <p>
+    Led the <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine Service</a> development,
+    defining design and tasks for a growing VM team as well as the Block Storage, Virtual Networking and Bare Metal Compute
+    teams. Identified dependencies and opportunities to parallelize development to meet an aggressive delivery date whilst
+    delivering a control plane implementation that was competitive in the Gartner bulk provisioning benchmarks. 
+    </p>
+    <p>
+      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a> control plane. 
+    </p>
+    <p>
+      Designed &amp; implemented zero copy RPC and thread per core (M:N) user mode task &amp; IO scheduling core to
+      provide a high performance platform for <a href="https://aws.amazon.com/rds/aurora">Amazon Aurora</a>'s
+      distributed storage.
+
+      <a href="https://patents.google.com/patent/US20210342311A1">Patented</a> novel
+      optimistic concurrency primitives to eliminate transaction aborts due to hot key contention under common
+      workloads.
+    </p>
+    <p>
+      Designed HSM vendor independent API and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a>
+      verification for financial transaction processing. Implemented 10k connection solution for Java prior to
+      non-blocking IO support.
+    </p>
+
+    <h2>EDUCATION</h2>
+    <p>
+      M.Sc. Computer Science (Distinction), <i><a href="https://tobler.nz/benjamin-tobler-msc-thesis.pdf">Network
+          Security Protocols</a></i>, University of Cape Town, 2005<br>
+      Awarded <a href="https://www.nrf.ac.za/">NRF</a> Prestige Scholarship for Masters study<br>
+      Published in proceedings <a href="https://www.ifipsec.org/">IFIP SEC</a> 2004 Toulouse (<a
+        href="https://tobler.nz/toblerifipsec04.pdf">.pdf</a>)
+      &amp; <a href="https://digifors.cs.up.ac.za/issa/2003/downloadsDay3.htm">ISSA</a> 2003 Johannesburg
+      (<a href="https://tobler.nz/toblerissa03.pdf">.pdf</a>)
+    </p>
+
+    <h2>PATENTS</h2>
+    <p>
+      Selected database &amp; virtualization management patents
+    </p>
+    <p class="indent">
+      <a href="https://patents.google.com/patent/US9223843B1">US9223843</a>,
+      <a href="https://patents.google.com/patent/US9552242B1">US9552242</a>,
+      <a href="https://patents.google.com/patent/US20170083565A1/en">US20170083565</a>,
+      <a href=" https://patents.google.com/patent/US20210342311A1">US20210342311</a>,
+      <a href="https://patents.google.com/patent/US9055117B1">US9055117</a>,
+      <a href="https://patents.google.com/patent/US8504691B1/en">US8504691</a>,
+      <a href="https://patents.google.com/patent/US8190682">US8190682</a><br>
+    </p>
+
+    <h2>EMPLOYMENT</h2>
+    <h3>Oracle Cloud Infrastructure 2016 - 2021, Consulting MTS </h3>
+    <p>
+      Led design reviews for new services &amp; architectures. Defined team roadmaps, priorities &amp; technical
+      direction. Worked across client teams to define and drive adoption of scalable &amp; resilient approaches to data
+      modelling, transactions &amp; consistency, and distribution at scale from control plane to data plane.
+    </p>
+    <h4>Virtual Machine Service</h4>
+    <ul>
+      <li>
+        Led the OCI VM offering design, development and delivery while expanding the team and parallelizing work to bring in the
+        delivery date. Defined, prioritized and assigned development and integration tasks for the VMI, Bare Metal Compute,
+        Block Storage and Virtual Networking teams as well as monitoring, operation and capacity management tooling to deliver
+        a fully featured Virtual Machine Instance product on an aggressive timeline to meet customer demand. Drove a successful
+        effort to reach GA with competitive Gartner bulk provisioning benchmark times as measured by Gartner. 
+      </li>
+      <li>
+        Defined post GA roadmap, including improved and extended automation for operational insights &amp; troubleshooting and
+        capacity management. Defined technical product requirements and implemented proof of concept for <a
+        href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own Image</a>
+        support for VMware, VirtualBox, QEMU and other virtualization products.
+      </li>
+    </ul>
+    <h4>Strictly serializable database for control planes</h4>
+    <ul>
+      <li>
+        Worked with team to transition from a ORM style database library layer, to database as a service, including cell based
+        architecture to limit blast radius and mitigate noisy neighbours. Worked with client teams on migration and effective
+        use of the service for regional replication, fan out to data plane nodes and data integration use cases.
+      </li>
+      <li>
+        Designed novel (<a href="https://patents.google.com/patent/US20210342311A1">patent 20210342311</a>) optimistic
+        concurrency primitives (e.g. opaque test-and-increment counters) to eliminate transaction aborts caused by
+        hot key contention under common workload patterns.
+      </li>
+      <li>
+        Designed (in conjunction with TLA verification) and implemented proof of concept for
+        new scalable transactional storage for future scaling and high availability.
+      </li>
+    </ul>
+    </p>
+
+    <h3>Amazon Web Services 2005 - 2014, Senior SDE</h3>
+    <h4>Amazon Aurora distributed storage </h4>
+    <ul>
+      <li>
+        Developed task and IO scheduling core (including zero-copy, vectored IO custom RPC) to provide a platform for
+        the team to develop features that met the ambitious latency and throughput requirements of the storage system.
+        E.g. enabled highly concurrent and low latency messaging for the database engine to massively fan out (striped)
+        writes to distributed storage.
+      </li>
+      <li>
+        Mentored remote Bay Area team through integration of database engine with distributed storage.
+      </li>
+      <li>
+        Designing to avoid (and profiled to identify) performance bottlenecks on the fast path. E.g. eliding locks and
+        using suitable data structures and concurrency mechanisms for the M:N threading and partitioning model;
+        Eliminating heap allocations by implementing custom C++ function objects for callbacks and completions; Custom
+        message buffer vectors to separate user data payloads from headers without copying. </li>
+    </ul>
+
+    <h4>Virtual Private Cloud</h4>
+    <ul>
+      <li>
+        Led design and implementation the VPC virtual network management control plane.
+        The system manages VPC customers' network metadata, including network topology maps to physical resources,
+        metadata ACLs, and provides a stream source for distribution to hypervisors.
+      </li>
+      <li>
+        Collaborated with AWS Linux kernel team on successful effort to improve packet throughput on hypervisors.
+        Achieved by moving source identification logic from control plane agent in user space, to a kernel module.
+      </li>
+      <li>
+        Extended and maintained the distributed firewall system that implements EC2 instance security groups across
+        all the hypervisors in a data center.
+      </li>
+      <li>
+        Optimized in-memory representation of VPC network topology and security policy on hypervisors to support massive
+        VPC &amp; EC2 scaling while making efficient use of limited dom0 hypervisor memory.
+      </li>
+    </ul>
+
+    <h4>EC2 from founding, through beta and GA</h4>
+    <ul>
+      <li>
+        Designed and implemented the EC2 control plane hypervisor agent. Ran on > 100K physical hosts (and now > 1M
+        hypervisors) to manage the customer virtual machine (EC2 instance) lifecycle. Extended the agent to collaborate
+        with neighboring hypervisors to download and cache boot images from object store service (<a
+          href="https://aws.amazon.com/s3/"></a>S3</a>). The improvement allowed fast EC2 instance launches despite
+        limited edge bandwidth (circa private beta launch).
+      </li>
+      <li>
+        Implemented many internal and public utilities, micro-services and tools for EC2:
+        e.g. command-line AMI packager and up-loader,
+        internal dynamic DNS vendor for EC2 instances and hypervisors,
+        and network rate limiting at hypervisor to prevent noisy neighbor problems.
+      </li>
+      <li>
+        Helped grow the EC2 team in Seattle by ramping up new team members tasked with developing new EC2 networking and
+        security functionality.
+      </li>
+    </ul>
+    <div>
+
+</body>
+
+</html>
