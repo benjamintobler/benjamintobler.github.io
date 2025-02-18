@@ -84,7 +84,7 @@
 
     a,
     a:visited {
-      color: #30618a;
+      color: #3061aa;
       text-decoration: none;
     }
   </style>
@@ -98,38 +98,29 @@
     </p>
 
     <h2>ABOUT</h2>
+
     <p>
-      Software engineer working in distributed database &amp; storage systems, networking & virtualization.
+      I'm a software engineer working in distributed systems, networking & virtualization.
+      My start in cloud was at AWS on <a href="https://aws.amazon.com/ec2/">EC2</a>.
+      I developed and owned the control plane hypervisor agent from scratch to GA.
+      Work at EC2 expanded to the conception of <a href="https://aws.amazon.com/vpc/">VPC</a>.
+      I took ownership of the development & delivery of VPC's control plane, user & internal APIs.
     </p>
 
     <p>
-      AWS <a href="https://aws.amazon.com/ec2/">EC2</a> team member from founding, through beta &amp; GA, to $1Bn ARR
-      service.
+      After VPC GA I joined the nascent <a href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a> project.
+      I developed the storage RPC stack, IO and task scheduling.
+      Later I delivered <a href="">Virtual Machines</a> for Oracle Cloud Infrastructure.
+      At OCI I designed & patented novel operations for OCC based database systems.
+      These server managed operations elinated a significant & common class commit conflicts.
+    </p>
 
-      Owned hypervisor side of EC2 control plane through GA.
-    </p>
     <p>
-    Led the <a href="https://www.oracle.com/cloud/compute/virtual-machines/">OCI Virtual Machine Service</a> development,
-    defining design and tasks for a growing VM team as well as the Block Storage, Virtual Networking and Bare Metal Compute
-    teams. Identified dependencies and opportunities to parallelize development to meet an aggressive delivery date whilst
-    delivering a control plane implementation that was competitive in the Gartner bulk provisioning benchmarks. 
-    </p>
-    <p>
-      Led development of the <a href="https://aws.amazon.com/vpc/">AWS VPC</a> control plane. 
-    </p>
-    <p>
-      Designed &amp; implemented zero copy RPC and thread per core (M:N) user mode task &amp; IO scheduling core to
-      provide a high performance platform for <a href="https://aws.amazon.com/rds/aurora">Amazon Aurora</a>'s
-      distributed storage.
-
-      <a href="https://patents.google.com/patent/US20210342311A1">Patented</a> novel
-      optimistic concurrency primitives to eliminate transaction aborts due to hot key contention under common
-      workloads.
-    </p>
-    <p>
-      Designed HSM vendor independent API and <a href="https://en.wikipedia.org/wiki/EMV">EMV (Chip &amp; PIN)</a>
-      verification for financial transaction processing. Implemented 10k connection solution for Java prior to
-      non-blocking IO support.
+      Recently I've been working in B2B on an <a
+        href="https://en.wikipedia.org/wiki/Electronic_data_interchange">EDI</a> platform.
+      In the past I've worked in EFT implementing transaction processing platforms.
+      I implemented 10K connection support for Java (before non-blocking IO support in the JDK).
+      Additionally I implemented <a href="https://en.wikipedia.org/wiki/EMV">EMV</a> support and HSM vendor independent cryptographic libraries.
     </p>
 
     <h2>EDUCATION</h2>
@@ -158,33 +149,36 @@
     </p>
 
     <h2>EMPLOYMENT</h2>
-    <h3>Oracle Cloud Infrastructure 2016 - 2021, Consulting MTS </h3>
+    <h3>Oracle Cloud Infrastructure</h3>
+    <i>2016 - 2021, Consulting MTS</i>
+
+    <h4><a href="https://www.oracle.com/cloud/compute/virtual-machines/">Virtual Machines</a></h4>
+
     <p>
-      Led design reviews for new services &amp; architectures. Defined team roadmaps, priorities &amp; technical
-      direction. Worked across client teams to define and drive adoption of scalable &amp; resilient approaches to data
-      modelling, transactions &amp; consistency, and distribution at scale from control plane to data plane.
+      Owned development Virtual Machine service and delivered within aggressive TTM goal.<br />
+      Co-ordinated developement & integration across block storage, virtual networking and compute teams.<br />
+      Designed control plane architecture involving command distribution and state collation from VM hosts. <br />
+      Responsible for operational readiness at GA.<br />
+      Fast followed GA with competitor beating bulk provisioning for Gartner evaluation.<br />
     </p>
-    <h4>Virtual Machine Service</h4>
+
+    <p>
+      Responsible for post GA roadmap, including BYOI support.<br />
+      Owned delivery incremental customer post GA features & system functionality.<br />
+      Including capacity management automation, improved operational insights &amp; troubleshooting tooling. <br />
+      Defined requirements for <a
+        href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own
+        Image</a> to enabled lift & shift of existing VMWare, VirtualBox, etc customer VMs.
+      Implemented BYOI PoC integration of key technologies and planned development tasks and schedule.
+    </p>
+
+    <h4>Control Plane DB Service</h4>
     <ul>
       <li>
-        Led the OCI VM offering design, development and delivery while expanding the team and parallelizing work to bring in the
-        delivery date. Defined, prioritized and assigned development and integration tasks for the VMI, Bare Metal Compute,
-        Block Storage and Virtual Networking teams as well as monitoring, operation and capacity management tooling to deliver
-        a fully featured Virtual Machine Instance product on an aggressive timeline to meet customer demand. Drove a successful
-        effort to reach GA with competitive Gartner bulk provisioning benchmark times as measured by Gartner. 
-      </li>
-      <li>
-        Defined post GA roadmap, including improved and extended automation for operational insights &amp; troubleshooting and
-        capacity management. Defined technical product requirements and implemented proof of concept for <a
-        href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring Your Own Image</a>
-        support for VMware, VirtualBox, QEMU and other virtualization products.
-      </li>
-    </ul>
-    <h4>Strictly serializable database for control planes</h4>
-    <ul>
-      <li>
-        Worked with team to transition from a ORM style database library layer, to database as a service, including cell based
-        architecture to limit blast radius and mitigate noisy neighbours. Worked with client teams on migration and effective
+        Worked with team to transition from a ORM style database library layer, to database as a service, including cell
+        based
+        architecture to limit blast radius and mitigate noisy neighbours. Worked with client teams on migration and
+        effective
         use of the service for regional replication, fan out to data plane nodes and data integration use cases.
       </li>
       <li>
