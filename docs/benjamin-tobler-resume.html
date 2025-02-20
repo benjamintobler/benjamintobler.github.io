@@ -131,7 +131,7 @@
       Later I designed &amp; patented novel server arbitrated operations for OCC
       based database systems.
 
-      The innovation eliminated common class commit conflicts that could cause
+      The innovation eliminated a common class of commit conflicts causing
       performance &amp; availability issues.
     </p>
 
@@ -147,10 +147,9 @@
       implementing transaction processing
       platforms.
 
-      I implemented 10K connection support for Java (before non-blocking IO
-      support in the JDK) enabling customers to support entire fleets of POS
-      and
-      ATMs with a single transaction system.
+      I implemented 10K connection support for Java (prior to non-blocking IO
+      availability in the JDK) enabling customers to support thousands of
+      POS terminals and ATMs with a single transaction processor.
 
       Additionally I implemented <a
         href="https://en.wikipedia.org/wiki/EMV">EMV</a> support and a
@@ -236,23 +235,51 @@
     </p>
 
     <p>
-      Developed <a
-        href="https://patents.google.com/patent/US20210342311A1">novel
+      Designed <a href="https://patents.google.com/patent/US20210342311A1">novel
       </a> transactor arbitrated operations.
 
-      These commit time operations eliminate transaction aborts caused by hot
-      key contention under common workload patterns.
+      Eliminated transaction aborts caused by hot key contention under common
+      workload patterns of the largest control planes in the org.
 
-      The innovation means that concurrent transactions that would have aborted
-      due to conflicts on, for example, incrementing quota counters or
-      allocating from a pool of resources, can have these operations arbitrated
-      and completed at commit time by the transactor.
+      The innovation means that concurrent transactions are no longer
+      necessarily aborted due to conflicts on, for example, incrementing quota
+      counters or allocation of resources from a set. Instead these operations
+      are arbitrated and completed at commit time by the transactor.
     </p>
 
     <p>
-      Developed and PoC'd a new KV store leveraging existing distributed systems
-      components and collaborated to use formal methods (TLA+) to verify
-      strict serializability.
+      PoC'd a new KV store leveraging existing distributed systems components
+      and collaborated to use formal methods (TLA+) to verify strict
+      serializability.
+    </p>
+
+    <h4>Dev Tools</h4>
+
+    <p>
+      Led work to extend the org's microservice generator by developing a
+      service framework SDK for the output to use.
+    </p>
+
+    <p>
+      Significantly reduced: Effort teams spend on undifferentiated
+      functionality, boilerplate &amp; being operationally ready; Opportunity
+      for bugs; Operational load.
+    </p>
+
+    <p>
+      Determined actual needs by collaboration and source code repository
+      auditing.
+
+      Identified common pitfalls, relevant best practices and conventions for
+      APIs, data access, configuration and resilience.
+    </p>
+
+    <p>
+      Delivered: Resource GC - e.g. idempotency tokens & operation identifiers
+      and tombstoning; Resiliency mechanisms - e.g. PID based load shedder &
+      circuit breaker; API functionality - e.g. operation idempotency
+      management.
+
     </p>
 
     <h3><a href="https://aws.amazon.com/">AWS</a></h3>
@@ -263,15 +290,19 @@
     <p>
       Developed high performance storage RPC stack, IO and task scheduling.
 
-      Implemented and used zero copy, M:N user mode task scheduling,
-      scatter-gather IO and resource partitioning and core assignment to achieve
+      Implemented and used zero copy, user mode task scheduling, vectored
+      non-blocking IO with resource partitioning and core assignment to achieve
       low latency, high concurrency log write request processing.
-
-      Coordinated DB engine client developed and integrate against storage
-      between Palo Alto and Seattle based teams.
 
       Profiled and optimized hot path to achieve close to line rate RPC
       capability.
+    </p>
+
+    <p>
+      Coordinated DB engine storage client development and integration across
+      Palo Alto and Seattle based teams.
+
+      Led security threat model analysis and mitigations.
     </p>
 
     <h4><a href="https://aws.amazon.com/vpc/">Virtual Private Cloud</a></h4>
@@ -304,8 +335,7 @@
     <p>
       Optimized in-memory representation of VPC network topology and security
       policy on hypervisors to support massive VPC &amp; EC2 scaling while
-      making efficient use of limited dom0
-      hypervisor memory.
+      making efficient use of limited hypervisor host memory.
     </p>
 
     <h4><a href="https://aws.amazon.com/ec2/">EC2</a></h4>
