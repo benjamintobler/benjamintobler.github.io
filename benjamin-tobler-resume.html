@@ -1,0 +1,373 @@
+<html>
+
+<head>
+  <style>
+    html {
+      text-align: center;
+    }
+
+    body {
+      font-family: 'Trebuchet MS';
+      font-size: 11pt;
+      text-align: center;
+    }
+
+    div {
+      margin: auto;
+      text-align: justify;
+      width: 45em;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .indent {
+      margin-left: 0.5em;
+      padding-left: 0;
+    }
+
+    li {
+      padding-bottom: 0.5em;
+      padding-left: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Georgia, serif;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 0.25em;
+    }
+
+    h4 {
+      font-size: 1em;
+      font-weight: 450;
+      color: dimgray;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+    }
+
+    p {
+      margin-top: 0.25em;
+      padding-top: 0;
+      text-align: justify;
+    }
+
+    a,
+    a:visited {
+      color: #3061aa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div div="id-resume">
+    <h1>Benjamin Tobler Resum&eacute;</h1>
+    <p style="font-size: 10pt;">
+      <a href="mailto:ben@tobler.nz">ben@tobler.nz</a> | <a
+        href="https://tobler.nz">tobler.nz</a>
+    </p>
+
+    <h2>ABOUT</h2>
+
+    <p>
+      I'm a software engineer working in distributed systems, networking &amp;
+      virtualization.
+
+      My start in cloud was at AWS building <a
+        href="https://aws.amazon.com/ec2/">EC2</a>.
+
+      I developed and owned the control plane hypervisor agent &amp; VM resource
+      manager from inception to GA.
+
+      When EC2 expanded to <a href="https://aws.amazon.com/vpc/">VPC</a> I owned
+      development &amp; delivery of VPC's control plane and APIs.
+    </p>
+
+    <p>
+      After VPC GA, I joined the nascent <a
+        href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a> project
+      where I developed the storage RPC stack, IO and task scheduling and
+      coordinated DB engine storage client development between Palo Alto and
+      Seattle teams.
+    </p>
+
+    <p>
+      At <a href="https://www.oracle.com/cloud/">Oracle Cloud</a> I owned the
+      delivery of <a
+        href="https://www.oracle.com/cloud/compute/virtual-machines/">Virtual
+        Machines</a>, coordinating development and integration across
+      networking, storage and compute teams.
+
+      Later I designed &amp; patented novel transactor executed &amp; arbitrated
+      guarded operations for OCC based database systems.
+
+      The innovation eliminated a common class of commit conflicts causing
+      performance &amp; availability issues across some of the largest OCI
+      control planes.
+    </p>
+
+    <p>
+      Recently I've been working in B2B on an <a
+        href="https://en.wikipedia.org/wiki/Electronic_data_interchange">EDI</a>
+      platform.
+    </p>
+
+    <p>
+      In the past I've worked in <a
+        href="https://en.wikipedia.org/wiki/Electronic_funds_transfer">EFT </a>
+      implementing transaction processing
+      platforms.
+
+      I implemented 10K connection support for Java (prior to non-blocking IO
+      availability in the JDK) enabling customers to support thousands of
+      POS terminals and ATMs with a single transaction processor.
+
+      Additionally I implemented <a
+        href="https://en.wikipedia.org/wiki/EMV">EMV</a> support and a
+      <a href="https://en.wikipedia.org/wiki/Hardware_security_module">HSM</a>
+      vendor independent cryptographic library.
+    </p>
+
+    <h2>EDUCATION</h2>
+    <p>
+      M.Sc. Computer Science, with distinction, University of Cape Town,
+      2005<br>
+      &nbsp;&nbsp;<i><a
+          href="https://tobler.nz/benjamin-tobler-msc-thesis.pdf">Thesis</a> on
+        formal specification &amp; implementation of network security protocols
+      </i><br>
+      Awarded <a href="https://www.nrf.ac.za/">NRF</a> Prestige Scholarship for
+      Masters study<br>
+      Papers published in <a href="https://www.ifipsec.org/">IFIP SEC</a> 2004
+      Toulouse (<a href="https://tobler.nz/toblerifipsec04.pdf">.pdf</a>)
+      &amp; <a
+        href="https://digifors.cs.up.ac.za/issa/2003/downloadsDay3.htm">ISSA</a>
+      2003 Johannesburg
+      (<a href="https://tobler.nz/toblerissa03.pdf">.pdf</a>)
+    </p>
+
+    <h2>SELECTED PATENTS</h2>
+    <a href="https://patents.google.com/patent/US20210342311A1">
+      OCC transactor executed &amp; arbitrated guarded operations</a>,
+    <a href="https://patents.google.com/patent/US9552242B1">Distributed log
+      storage</a>,
+    <a href="https://patents.google.com/patent/US8504691B1/en">Heterogeneous
+      resource allocation</a>,
+    <a href="https://patents.google.com/patent/US9055117B1">Distributed NAT</a>
+    &amp;
+    <a href="https://tobler.nz/benjamin-tobler-patents.html">more...</a>
+
+    <h2>WORK</h2>
+
+    <h3><a href="https://www.oracle.com/cloud/">Oracle Cloud</a></h3>
+    <i>2016 - 2021, Consulting MTS</i>
+
+    <h4><a href="https://www.oracle.com/cloud/compute/virtual-machines/">Virtual
+        Machines</a></h4>
+
+    <p>
+      Owned development of Virtual Machine service and delivered meeting an
+      aggressive TTM goal.
+
+      Coordinated development &amp; integration across block storage, virtual
+      networking and compute teams.
+
+      Designed control plane architecture involving command distribution and
+      state collation from VM hosts.
+
+      Responsible for operational readiness at GA.
+
+      Fast followed GA with competitor beating bulk provisioning for Gartner
+      evaluation.
+    </p>
+
+    <p>
+      Responsible for post GA roadmap, including BYOI support.
+
+      Owned delivery incremental customer post GA features &amp; system
+      functionality.
+
+      Including capacity management automation, improved operational
+      insights
+      &amp; troubleshooting tooling.
+
+      Defined requirements for
+      <a
+        href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/bringyourownimage.htm">Bring
+        Your Own Image
+      </a>
+      to enable lift &amp; shift of users' VMWare (etc) VMs to OCI.
+
+      Implemented BYOI PoC integration of key technologies and planned
+      development tasks and schedule.
+    </p>
+
+    <h4>Control Plane DB Service</h4>
+
+    <p>
+      Transitioned the internal database system used by OCI control planes
+      from ORM style database library layer to a service using a cell
+      architecture for tenant isolation to limit blast radius and mitigate
+      noisy neighbours.
+    </p>
+
+    <p>
+      Designed <a href="https://patents.google.com/patent/US20210342311A1">novel
+      </a> transactor executed &amp; arbitrated guarded operations.
+
+      Eliminated transaction aborts caused by hot key contention under common
+      workload patterns of the largest control planes in the org.
+
+      The innovation means that concurrent transactions are no longer
+      necessarily aborted due to conflicts on, for example, incrementing quota
+      counters or allocation of resources from a set. Instead these operations
+      are arbitrated and completed at commit time by the transactor.
+    </p>
+
+    <p>
+      PoC'd a new KV store leveraging existing distributed systems components
+      and collaborated to use formal methods (TLA+) to verify strict
+      serializability.
+    </p>
+
+    <h4>Dev Tools</h4>
+
+    <p>
+      Led work to extend the org's microservice generator by developing a
+      service framework SDK for the output to use.
+    </p>
+
+    <p>
+      Significantly reduced: Effort teams spend on undifferentiated
+      functionality, boilerplate &amp; being operationally ready; Opportunity
+      for bugs; Operational load.
+    </p>
+
+    <p>
+      Determined actual needs by collaboration and source code repository
+      auditing.
+
+      Identified common pitfalls, relevant best practices and conventions for
+      APIs, data access, configuration and resilience.
+    </p>
+
+    <p>
+      Delivered: Resource GC - e.g. idempotency tokens & operation identifiers
+      and tombstoning; Resiliency mechanisms - e.g. PID based load shedder &
+      circuit breaker; API functionality - e.g. operation idempotency
+      management.
+    </p>
+
+    <h3><a href="https://aws.amazon.com/">AWS</a></h3>
+    <i>2005 - 2014, Senior SDE</i>
+
+    <h4><a href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a></h4>
+
+    <p>
+      Developed high performance storage RPC stack, IO and task scheduling.
+
+      Implemented and used zero copy, user mode task scheduling, vectored
+      non-blocking IO with resource partitioning and core assignment to achieve
+      low latency, high concurrency log write request processing.
+
+      Profiled and optimized hot path to achieve close to line rate RPC
+      capability.
+    </p>
+
+    <p>
+      Coordinated DB engine storage client development and integration across
+      Palo Alto and Seattle based teams.
+
+      Owned security threat model analysis and mitigations.
+    </p>
+
+    <h4><a href="https://aws.amazon.com/vpc/">Virtual Private Cloud</a></h4>
+
+    <p>
+      Owned development and delivery of the control plane frontend, user facing
+      and internal APIs.
+
+      The control plane processes API calls, from users and internal compute
+      services, to modify virtual network topology, VM attachments, external
+      routing and security ACLs. The API requests are converted into commands
+      that it reliably delivers to 100,000s of hypervisors hosts and network
+      &amp; edge devices.
+    </p>
+
+    <p>
+      Collaborated with AWS Linux kernel team on successful effort to improve
+      packet throughput on hypervisors.
+
+      Achieved by moving source identification logic from control plane agent in
+      user space, to a kernel module.
+    </p>
+
+    <p>
+      Extended and maintained the distributed firewall system that implements
+      EC2 instance security groups across all the hypervisors in a data center.
+    </p>
+
+    <p>
+      Optimized in-memory representation of VPC network topology and security
+      policy on hypervisors to support massive VPC &amp; EC2 scaling while
+      making efficient use of limited hypervisor host memory.
+    </p>
+
+    <h4><a href="https://aws.amazon.com/ec2/">EC2</a></h4>
+
+    <p>
+      Developed &amp; and owned the EC2 control plane hypervisor agent & VM
+      resources coordinator from conception through GA.
+
+      The agent manages the VM lifecycle on each of the many thousands (now
+      millions) of hypervisor hosts.
+
+      Implemented collaborative peer boot image download when original pre-GA
+      object storage read capacity was highly limited.
+    </p>
+
+    <p>
+      Implemented internal and public tooling and microservices, including AMI
+      packager and up-loader CLI, dynamic DNS vendor and intra data center
+      network rate limiting to mitigate noisy neighbours.
+    </p>
+
+    <p>
+      Helped grow the EC2 team in Seattle by ramping up new team members tasked
+      with developing new EC2 networking and security functionality.
+    </p>
+
+  </div>
+</body>
+
+</html>
